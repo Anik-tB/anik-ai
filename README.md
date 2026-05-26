@@ -1,28 +1,29 @@
-<p align="center">
-  <img alt="Anik-AI Logo" src="docs/images/favicon.svg" width="160px"/>
+﻿<p align="center">
+  <img alt="Anik-AI Logo" src="docs/images/logo.png" width="180px"/>
 </p>
 
 <h1 align="center">Anik AI</h1>
 
 <p align="center">
   <strong>A flexible, extensible, enterprise-grade AI Agent Platform</strong><br/>
-  Built on Spring Boot 4 + Spring AI · Multi-model · RAG · Memory · Skills · OpenAPI
+  Built on Spring Boot 4 + Spring AI &nbsp;·&nbsp; Multi-model &nbsp;·&nbsp; RAG &nbsp;·&nbsp; Memory &nbsp;·&nbsp; Skills &nbsp;·&nbsp; OpenAPI
 </p>
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache%202.0-blue.svg" alt="License"/></a>
   <img src="https://img.shields.io/badge/Java-25-orange.svg" alt="Java 25"/>
   <img src="https://img.shields.io/badge/Spring%20Boot-4.0-brightgreen.svg" alt="Spring Boot 4"/>
-  <img src="https://img.shields.io/badge/Spring%20AI-latest-green.svg" alt="Spring AI"/>
+  <img src="https://img.shields.io/badge/Spring%20AI-latest-6DB33F.svg" alt="Spring AI"/>
+  <img src="https://img.shields.io/badge/H2-embedded-blueviolet.svg" alt="H2 Database"/>
 </p>
 
 ---
 
-## What is Anik AI?
+## 🧠 What is Anik AI?
 
-**Anik AI** is an out-of-the-box enterprise AI agent platform. It lets you connect multiple large language models (LLMs), build and orchestrate AI agents, manage knowledge bases with RAG (Retrieval-Augmented Generation), and expose everything through a clean admin UI and standardized OpenAPI.
+**Anik AI** is a self-hosted, out-of-the-box enterprise AI agent platform. Connect multiple large language models (LLMs), build and orchestrate intelligent agents, manage knowledge bases with RAG (Retrieval-Augmented Generation), and expose everything through a clean admin UI and standardized OpenAPI — all from a single deployable JAR.
 
-Think of it as your self-hosted AI backend — wire up your models, create agents with memory and skills, and integrate via API.
+> Think of it as your **self-hosted AI backend** — wire up your models, create agents with persistent memory and reusable skills, and integrate via a clean REST API.
 
 ---
 
@@ -36,7 +37,7 @@ Think of it as your self-hosted AI backend — wire up your models, create agent
 | 💾 **Long-term Memory** | Agents remember conversations across sessions for contextual coherence |
 | 🔧 **Skill Management** | Extend agent capabilities with configurable, reusable skill definitions |
 | 📁 **Resource Management** | Upload and parse documents (PDF, Office); object storage via MinIO or local disk |
-| 🌐 **OpenAPI** | Standardized REST API for third-party integrations |
+| 🌐 **OpenAPI** | Standardized REST API for seamless third-party integrations |
 | 🖥️ **Admin Dashboard** | Modern management UI built on SoybeanAdmin (Vue 3) |
 
 ---
@@ -71,7 +72,7 @@ anik-ai/
 | **Java JDK** | 25+ | [Download](https://www.oracle.com/java/technologies/downloads/) |
 | **Maven** | 3.9+ | Bundled with IntelliJ, or install separately |
 
-> ✅ **No database installation needed!** The app uses an embedded H2 in-memory database that is set up automatically on every start.
+> ✅ **No database installation needed!** Anik AI uses an embedded H2 in-memory database that is set up automatically on every start.
 
 ---
 
@@ -82,8 +83,6 @@ git clone https://github.com/aizuda/anik-ai.git
 cd anik-ai
 ```
 
----
-
 ### 2. Build the project
 
 Run this once from the project root to compile all modules and package the executable JAR:
@@ -92,12 +91,10 @@ Run this once from the project root to compile all modules and package the execu
 mvn clean package -DskipTests
 ```
 
-This will produce the runnable JAR at:
+This produces the runnable JAR at:
 ```
 anik-ai-starter/target/anik-ai-server-exec.jar
 ```
-
----
 
 ### 3. Start the server
 
@@ -105,15 +102,13 @@ anik-ai-starter/target/anik-ai-server-exec.jar
 java -jar anik-ai-starter/target/anik-ai-server-exec.jar
 ```
 
-Wait about **20–25 seconds** for the server to fully boot. You'll see this in the logs when it's ready:
+Wait about **20–25 seconds** for the server to fully boot. You will see this in the logs when it is ready:
 
 ```
 :: Anik Ai ::
 anik-job server started successfully
 Started AnikAiSpringbootApplication in ~21 seconds
 ```
-
----
 
 ### 4. Open the Admin Dashboard
 
@@ -161,11 +156,13 @@ anik-ai:
 
 ## 🗄️ Database
 
-### Default (H2 In-Memory)
-- **No setup required** — the schema and seed data in [`anik_ai_schema.sql`](anik-ai-starter/src/main/resources/anik_ai_schema.sql) are applied automatically on every startup.
-- ⚠️ Data is **wiped on restart** (in-memory). Perfect for development and testing.
+### Default — H2 In-Memory
 
-### Switching to MySQL (for production / persistent data)
+- **No setup required.** The schema and seed data in [`anik_ai_schema.sql`](anik-ai-starter/src/main/resources/anik_ai_schema.sql) are applied automatically on every startup.
+- ⚠️ Data is **wiped on restart** (in-memory). Ideal for development and testing.
+
+### Switching to MySQL (production / persistent data)
+
 1. Create a MySQL database named `anik_ai`
 2. Run [`docs/sql/anik_ai_schema.sql`](docs/sql/anik_ai_schema.sql) in your MySQL client
 3. Update `application.yml`:
@@ -186,20 +183,33 @@ anik-ai:
 
 ## 🔌 OpenAPI / REST
 
-The OpenAPI module exposes a standardized REST interface for integrating Anik AI into your own apps.
+The OpenAPI module exposes a standardized REST interface for integrating Anik AI into your own applications.
 
-Base URL: `http://localhost:8080/anik-ai/`
-
-Authentication uses the `Anik-Ai-Auth` header with a JWT token obtained from the login endpoint.
+- **Base URL:** `http://localhost:8080/anik-ai/`
+- **Authentication:** Pass a JWT token via the `Anik-Ai-Auth` header, obtained from the login endpoint.
 
 ---
 
 ## 🛠️ Development Tips
 
-- **Hot rebuild**: After changing Java source, run `mvn package -DskipTests -pl anik-ai-starter -am` and restart
-- **Logs**: Configured via [`logback-boot.xml`](anik-ai-starter/src/main/resources/logback-boot.xml)
-- **gRPC**: The internal gRPC service runs on port `18888`
-- **File uploads**: Stored under `./upload/` relative to where you run the JAR
+| Topic | Detail |
+|---|---|
+| **Hot rebuild** | `mvn package -DskipTests -pl anik-ai-starter -am` then restart |
+| **Logs** | Configured via [`logback-boot.xml`](anik-ai-starter/src/main/resources/logback-boot.xml) |
+| **gRPC** | Internal gRPC service runs on port `18888` |
+| **File uploads** | Stored under `./upload/` relative to where the JAR is launched |
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Here is how to get started:
+
+1. **Fork** the repository and create a feature branch from `main`
+2. **Make your changes** — ensure the code compiles and tests pass
+3. **Open a Pull Request** with a clear description of what you changed and why
+
+Please follow the existing code style and keep PRs focused on a single concern.
 
 ---
 
