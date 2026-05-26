@@ -1,0 +1,66 @@
+server:
+  port: 8081   # Demo service port
+
+# Swagger UI configuration
+springdoc:
+  api-docs:
+    enabled: true
+    path: /v3/api-docs
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
+    tags-sorter: alpha
+    operations-sorter: alpha
+
+# Logging configuration
+logging:
+  config: classpath:logback-boot.xml
+  level:
+    # Suppress Scope parent-child relationship mismatch warning for Micrometer Observation
+    # This warning is normal in reactive streaming calls and does not affect functionality
+    io.micrometer.observation.contextpropagation: ERROR
+    # OpenAPI Client log
+    com.aizuda.anik.ai.openapi.client: DEBUG
+
+anik-ai:
+    # enableclient mode
+    enabled: true
+
+    # ==================== Server connection ====================
+    # Server-side gRPC address (i.e. anik-ai.server.grpc-port of anik-ai-starter)
+    server:
+      host: 127.0.0.1
+      port: 18888
+
+    # ==================== Client configuration ====================
+    # This client gRPC port (Server distributes Chat requests through this port)
+  # Application ID (obtained after creation on Server "Application Management" page)
+    app-id: anik-ai-agent-demo
+
+    # Authentication token (automatically generated when the Server "Application Management" page is created)
+    token: SAI_ad27bd9de937499c8387336c8deb4cf0
+
+    port: 18889
+
+    # Skill file temporary directory
+    skill-temp-dir: /tmp/anik-ai-agent/skills
+
+    # ==================== OpenAPI Client Configuration ====================
+    open-api:
+      # enable OpenAPI Client
+      enabled: true
+
+      # Server HTTP port
+      web-port: 8080
+
+      # Whether to use HTTPS
+      https: false
+
+      # API path prefix
+      prefix: anik-ai
+
+      # Timeout configuration (milliseconds)
+      connect-timeout-ms: 5000
+      read-timeout-ms: 60000
+      chat-timeout-ms: 300000
+

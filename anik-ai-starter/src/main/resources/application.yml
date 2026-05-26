@@ -1,0 +1,80 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /anik-ai
+
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      # Max size per file (50MB-100MB recommended for RAG use cases)
+      max-file-size: 50MB
+      # Total file size limit per request (increase if supporting parallel multi-file uploads)
+      max-request-size: 100MB
+  web:
+    resources:
+      static-locations: classpath:admin/
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  profiles:
+    active: dev
+  datasource:
+    name: anik_ai
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:anik_ai;MODE=MySQL;DB_CLOSE_DELAY=-1;DATABASE_TO_UPPER=FALSE
+    username: sa
+    password: ""
+    type: com.zaxxer.hikari.HikariDataSource
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:anik_ai_schema.sql
+    hikari:
+      connection-timeout: 30000
+      minimum-idle: 5
+      maximum-pool-size: 20
+      auto-commit: true
+      idle-timeout: 30000
+      pool-name: anik_ai
+      max-lifetime: 1800000
+      connection-test-query: SELECT 1
+anik-ai:
+  server:
+    grpc-port: 18888
+  skill:
+    upload-dir: ./upload/skills
+  crypto:
+    secret-key: ${ANIK_AI_CRYPTO_KEY:0123456789abcdef0123456789abcdef}
+    iv: ${ANIK_AI_CRYPTO_IV:fedcba9876543210fedcba9876543210}
+  resource:
+    storage-type: LOCAL
+    upload-dir: ./upload/resource
+    minio:
+      endpoint: http://localhost:9000
+      access-key: minioadmin
+      secret-key: minioadmin
+      bucket: anik-ai
+  # short term memory configuration
+  memory:
+    short-term:
+      # Storage type options: memory (in-memory) | db (database)
+      # - memory: suitable for standalone deployment, high performance, data lost on restart
+      # - db: suitable for distributed deployment, data persisted, lower performance
+      store-type: memory
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*.xml
+  typeAliasesPackage: com.example.anik.job.po
+  global-config:
+    db-config:
+      capital-mode: false
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: true
+
+# Logging configuration
+logging:
+  config: classpath:logback-boot.xml

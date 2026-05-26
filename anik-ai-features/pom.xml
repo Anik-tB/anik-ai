@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.aizuda</groupId>
+        <artifactId>anik-ai</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>anik-ai-features</artifactId>
+    <packaging>pom</packaging>
+    <name>anik-ai-features</name>
+    <description>anik-ai-features</description>
+
+    <modules>
+        <module>anik-ai-feature-common</module>
+        <module>anik-ai-feature-model</module>
+        <module>anik-ai-feature-agent</module>
+        <module>anik-ai-feature-rag</module>
+        <module>anik-ai-feature-skill</module>
+        <module>anik-ai-feature-memory</module>
+        <module>anik-ai-feature-resource</module>
+    </modules>
+</project>
