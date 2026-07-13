@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.aizuda</groupId>
+        <groupId>com.aianik</groupId>
         <artifactId>anik-ai</artifactId>
         <version>${revision}</version>
         <relativePath>../pom.xml</relativePath>
@@ -29,11 +29,11 @@
             <scope>runtime</scope>
         </dependency>
         <dependency>
-            <groupId>com.aizuda</groupId>
+            <groupId>com.aianik</groupId>
             <artifactId>anik-ai-admin</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.aizuda</groupId>
+            <groupId>com.aianik</groupId>
             <artifactId>anik-ai-openapi</artifactId>
         </dependency>
         <dependency>
@@ -61,7 +61,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.aizuda.anik.ai.starter.AnikAiSpringbootApplication</mainClass>
+                    <mainClass>com.aianik.anik.ai.starter.AnikAiSpringbootApplication</mainClass>
                     <classifier>exec</classifier>
                 </configuration>
                 <executions>

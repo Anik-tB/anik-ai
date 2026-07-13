@@ -1,15 +1,15 @@
-package com.aizuda.anik.ai.starter.listener;
+package com.aianik.anik.ai.starter.listener;
 
-import com.aizuda.anik.ai.common.Lifecycle;
-import com.aizuda.anik.ai.common.constants.SystemConstants;
-import com.aizuda.anik.ai.common.log.AnikAiLog;
+import com.aianik.anik.ai.common.Lifecycle;
+import com.aianik.anik.ai.common.constants.SystemConstants;
+import com.aianik.anik.ai.common.log.AnikAiLog;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.helpers.MessageFormatter;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
-import com.aizuda.anik.ai.common.util.AnikAiVersion;
+import com.aianik.anik.ai.common.util.AnikAiVersion;
 
 import java.util.List;
 

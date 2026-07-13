@@ -1,4 +1,4 @@
-package com.aizuda.anik.ai.starter;
+package com.aianik.anik.ai.starter;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
@@ -12,9 +12,9 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 import java.util.TimeZone;
 
-@SpringBootApplication(scanBasePackages = "com.aizuda.anik.ai")
+@SpringBootApplication(scanBasePackages = "com.aianik.anik.ai")
 @EnableConfigurationProperties
-@MapperScan("com.aizuda.anik.ai.persistence")
+@MapperScan("com.aianik.anik.ai.persistence")
 @EnableAsync
 @SpringBootConfiguration
 @EnableScheduling

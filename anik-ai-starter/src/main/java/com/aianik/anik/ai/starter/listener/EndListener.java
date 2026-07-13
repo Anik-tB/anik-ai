@@ -1,7 +1,7 @@
-package com.aizuda.anik.ai.starter.listener;
+package com.aianik.anik.ai.starter.listener;
 
-import com.aizuda.anik.ai.common.Lifecycle;
-import com.aizuda.anik.ai.common.log.AnikAiLog;
+import com.aianik.anik.ai.common.Lifecycle;
+import com.aianik.anik.ai.common.log.AnikAiLog;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextClosedEvent;
