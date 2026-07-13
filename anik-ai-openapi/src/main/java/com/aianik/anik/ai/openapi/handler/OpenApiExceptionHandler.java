@@ -1,8 +1,8 @@
-package com.aizuda.anik.ai.openapi.handler;
+package com.aianik.anik.ai.openapi.handler;
 
-import com.aizuda.anik.ai.common.execption.BaseAnikAiException;
-import com.aizuda.anik.ai.common.execption.AnikAiAuthenticationException;
-import com.aizuda.anik.ai.common.model.Result;
+import com.aianik.anik.ai.common.execption.BaseAnikAiException;
+import com.aianik.anik.ai.common.execption.AnikAiAuthenticationException;
+import com.aianik.anik.ai.common.model.Result;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.BindException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * @date 2026-04-24
  */
 @Slf4j
-@ControllerAdvice(basePackages = {"com.aizuda.anik.ai.openapi"})
+@ControllerAdvice(basePackages = {"com.aianik.anik.ai.openapi"})
 @ResponseBody
 public class OpenApiExceptionHandler {
 

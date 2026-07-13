@@ -1,11 +1,11 @@
-package com.aizuda.anik.ai.openapi.controller;
+package com.aianik.anik.ai.openapi.controller;
 
-import com.aizuda.anik.ai.common.constants.OpenApiPathConstants;
-import com.aizuda.anik.ai.common.model.Result;
-import com.aizuda.anik.ai.common.openapi.dto.OpenApiUserQueryRequest;
-import com.aizuda.anik.ai.common.openapi.dto.OpenApiUserRegisterRequest;
-import com.aizuda.anik.ai.common.openapi.dto.OpenApiUserVO;
-import com.aizuda.anik.ai.openapi.service.OpenApiUserService;
+import com.aianik.anik.ai.common.constants.OpenApiPathConstants;
+import com.aianik.anik.ai.common.model.Result;
+import com.aianik.anik.ai.common.openapi.dto.OpenApiUserQueryRequest;
+import com.aianik.anik.ai.common.openapi.dto.OpenApiUserRegisterRequest;
+import com.aianik.anik.ai.common.openapi.dto.OpenApiUserVO;
+import com.aianik.anik.ai.openapi.service.OpenApiUserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;

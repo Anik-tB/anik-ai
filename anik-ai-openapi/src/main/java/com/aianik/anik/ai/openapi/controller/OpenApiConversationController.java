@@ -1,14 +1,14 @@
-package com.aizuda.anik.ai.openapi.controller;
+package com.aianik.anik.ai.openapi.controller;
 
-import com.aizuda.anik.ai.admin.vo.PageResult;
-import com.aizuda.anik.ai.common.constants.OpenApiPathConstants;
-import com.aizuda.anik.ai.common.model.Result;
-import com.aizuda.anik.ai.common.openapi.dto.OpenApiConversationIdentityRequest;
-import com.aizuda.anik.ai.common.openapi.dto.OpenApiConversationQueryRequest;
-import com.aizuda.anik.ai.common.openapi.dto.OpenApiCreateConversationRequest;
-import com.aizuda.anik.ai.openapi.dto.OpenApiConversationVO;
-import com.aizuda.anik.ai.openapi.dto.OpenApiMessageVO;
-import com.aizuda.anik.ai.openapi.service.OpenApiConversationService;
+import com.aianik.anik.ai.admin.vo.PageResult;
+import com.aianik.anik.ai.common.constants.OpenApiPathConstants;
+import com.aianik.anik.ai.common.model.Result;
+import com.aianik.anik.ai.common.openapi.dto.OpenApiConversationIdentityRequest;
+import com.aianik.anik.ai.common.openapi.dto.OpenApiConversationQueryRequest;
+import com.aianik.anik.ai.common.openapi.dto.OpenApiCreateConversationRequest;
+import com.aianik.anik.ai.openapi.dto.OpenApiConversationVO;
+import com.aianik.anik.ai.openapi.dto.OpenApiMessageVO;
+import com.aianik.anik.ai.openapi.service.OpenApiConversationService;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import lombok.RequiredArgsConstructor;
 import org.springframework.validation.annotation.Validated;

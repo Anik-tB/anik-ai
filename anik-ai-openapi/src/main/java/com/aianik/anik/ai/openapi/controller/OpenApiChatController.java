@@ -1,10 +1,10 @@
-package com.aizuda.anik.ai.openapi.controller;
+package com.aianik.anik.ai.openapi.controller;
 
-import com.aizuda.anik.ai.common.constants.OpenApiPathConstants;
-import com.aizuda.anik.ai.common.model.Result;
-import com.aizuda.anik.ai.common.openapi.dto.OpenApiChatRequest;
-import com.aizuda.anik.ai.common.openapi.dto.OpenApiChatSyncResponse;
-import com.aizuda.anik.ai.openapi.service.OpenApiChatService;
+import com.aianik.anik.ai.common.constants.OpenApiPathConstants;
+import com.aianik.anik.ai.common.model.Result;
+import com.aianik.anik.ai.common.openapi.dto.OpenApiChatRequest;
+import com.aianik.anik.ai.common.openapi.dto.OpenApiChatSyncResponse;
+import com.aianik.anik.ai.openapi.service.OpenApiChatService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.MediaType;
 import org.springframework.validation.annotation.Validated;

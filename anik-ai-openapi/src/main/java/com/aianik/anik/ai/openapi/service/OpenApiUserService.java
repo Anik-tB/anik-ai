@@ -1,15 +1,15 @@
-package com.aizuda.anik.ai.openapi.service;
+package com.aianik.anik.ai.openapi.service;
 
 import cn.hutool.core.util.StrUtil;
-import com.aizuda.anik.ai.admin.enums.RoleEnum;
-import com.aizuda.anik.ai.common.execption.AnikAiException;
-import com.aizuda.anik.ai.common.openapi.dto.OpenApiUserRegisterRequest;
-import com.aizuda.anik.ai.common.openapi.dto.OpenApiUserVO;
-import com.aizuda.anik.ai.openapi.security.OpenApiSessionUtils;
-import com.aizuda.anik.ai.persistence.admin.mapper.UserMapper;
-import com.aizuda.anik.ai.persistence.admin.po.UserPO;
-import com.aizuda.anik.ai.persistence.openapi.mapper.OpenApiUserMapper;
-import com.aizuda.anik.ai.persistence.openapi.po.OpenApiUserPO;
+import com.aianik.anik.ai.admin.enums.RoleEnum;
+import com.aianik.anik.ai.common.execption.AnikAiException;
+import com.aianik.anik.ai.common.openapi.dto.OpenApiUserRegisterRequest;
+import com.aianik.anik.ai.common.openapi.dto.OpenApiUserVO;
+import com.aianik.anik.ai.openapi.security.OpenApiSessionUtils;
+import com.aianik.anik.ai.persistence.admin.mapper.UserMapper;
+import com.aianik.anik.ai.persistence.admin.po.UserPO;
+import com.aianik.anik.ai.persistence.openapi.mapper.OpenApiUserMapper;
+import com.aianik.anik.ai.persistence.openapi.po.OpenApiUserPO;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

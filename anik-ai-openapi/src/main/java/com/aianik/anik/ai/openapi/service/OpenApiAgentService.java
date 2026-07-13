@@ -1,10 +1,10 @@
-package com.aizuda.anik.ai.openapi.service;
+package com.aianik.anik.ai.openapi.service;
 
-import com.aizuda.anik.ai.common.enums.agent.AgentStatusEnum;
-import com.aizuda.anik.ai.common.execption.AnikAiException;
-import com.aizuda.anik.ai.common.openapi.dto.OpenApiAgentVO;
-import com.aizuda.anik.ai.persistence.agent.mapper.AgentMapper;
-import com.aizuda.anik.ai.persistence.agent.po.AgentPO;
+import com.aianik.anik.ai.common.enums.agent.AgentStatusEnum;
+import com.aianik.anik.ai.common.execption.AnikAiException;
+import com.aianik.anik.ai.common.openapi.dto.OpenApiAgentVO;
+import com.aianik.anik.ai.persistence.agent.mapper.AgentMapper;
+import com.aianik.anik.ai.persistence.agent.po.AgentPO;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

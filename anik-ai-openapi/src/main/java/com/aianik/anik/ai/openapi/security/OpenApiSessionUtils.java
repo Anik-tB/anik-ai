@@ -1,4 +1,4 @@
-package com.aizuda.anik.ai.openapi.security;
+package com.aianik.anik.ai.openapi.security;
 
 import lombok.Builder;
 import lombok.Data;

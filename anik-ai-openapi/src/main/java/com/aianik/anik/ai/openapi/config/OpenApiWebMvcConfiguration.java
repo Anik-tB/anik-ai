@@ -1,6 +1,6 @@
-package com.aizuda.anik.ai.openapi.config;
+package com.aianik.anik.ai.openapi.config;
 
-import com.aizuda.anik.ai.openapi.interceptor.OpenApiAuthInterceptor;
+import com.aianik.anik.ai.openapi.interceptor.OpenApiAuthInterceptor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;

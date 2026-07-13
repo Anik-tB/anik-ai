@@ -1,11 +1,11 @@
-package com.aizuda.anik.ai.openapi.service;
+package com.aianik.anik.ai.openapi.service;
 
 import cn.hutool.core.util.StrUtil;
-import com.aizuda.anik.ai.common.execption.AnikAiAuthenticationException;
-import com.aizuda.anik.ai.persistence.admin.mapper.UserMapper;
-import com.aizuda.anik.ai.persistence.admin.po.UserPO;
-import com.aizuda.anik.ai.persistence.openapi.mapper.OpenApiUserMapper;
-import com.aizuda.anik.ai.persistence.openapi.po.OpenApiUserPO;
+import com.aianik.anik.ai.common.execption.AnikAiAuthenticationException;
+import com.aianik.anik.ai.persistence.admin.mapper.UserMapper;
+import com.aianik.anik.ai.persistence.admin.po.UserPO;
+import com.aianik.anik.ai.persistence.openapi.mapper.OpenApiUserMapper;
+import com.aianik.anik.ai.persistence.openapi.po.OpenApiUserPO;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;

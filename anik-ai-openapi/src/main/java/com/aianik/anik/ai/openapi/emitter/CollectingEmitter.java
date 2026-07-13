@@ -1,6 +1,6 @@
-package com.aizuda.anik.ai.openapi.emitter;
+package com.aianik.anik.ai.openapi.emitter;
 
-import com.aizuda.anik.ai.common.execption.AnikAiException;
+import com.aianik.anik.ai.common.execption.AnikAiException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.MediaType;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter;

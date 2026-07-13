@@ -1,10 +1,10 @@
-package com.aizuda.anik.ai.openapi.controller;
+package com.aianik.anik.ai.openapi.controller;
 
-import com.aizuda.anik.ai.common.constants.OpenApiPathConstants;
-import com.aizuda.anik.ai.common.model.Result;
-import com.aizuda.anik.ai.common.openapi.dto.OpenApiAgentIdentityRequest;
-import com.aizuda.anik.ai.common.openapi.dto.OpenApiAgentVO;
-import com.aizuda.anik.ai.openapi.service.OpenApiAgentService;
+import com.aianik.anik.ai.common.constants.OpenApiPathConstants;
+import com.aianik.anik.ai.common.model.Result;
+import com.aianik.anik.ai.common.openapi.dto.OpenApiAgentIdentityRequest;
+import com.aianik.anik.ai.common.openapi.dto.OpenApiAgentVO;
+import com.aianik.anik.ai.openapi.service.OpenApiAgentService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;

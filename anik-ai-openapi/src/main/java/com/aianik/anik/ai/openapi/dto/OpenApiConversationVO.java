@@ -1,4 +1,4 @@
-package com.aizuda.anik.ai.openapi.dto;
+package com.aianik.anik.ai.openapi.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
 
 /**
- * OpenAPI message logging
+ * OpenAPI session information
  *
  * @author openanik
  * @date 2026-04-24
@@ -17,13 +17,15 @@ import java.time.LocalDateTime;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class OpenApiMessageVO {
+public class OpenApiConversationVO {
 
-    private String role;
+    private String conversationId;
 
-    private String content;
+    private Long agentId;
 
-    private Integer status;
+    private String title;
 
     private LocalDateTime createDt;
+
+    private LocalDateTime updateDt;
 }

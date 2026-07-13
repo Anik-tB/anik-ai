@@ -1,10 +1,10 @@
-package com.aizuda.anik.ai.openapi.interceptor;
+package com.aianik.anik.ai.openapi.interceptor;
 
 import cn.hutool.core.util.StrUtil;
-import com.aizuda.anik.ai.common.execption.AnikAiAuthenticationException;
-import com.aizuda.anik.ai.openapi.security.OpenApiSessionUtils;
-import com.aizuda.anik.ai.persistence.app.mapper.AppMapper;
-import com.aizuda.anik.ai.persistence.app.po.AppPO;
+import com.aianik.anik.ai.common.execption.AnikAiAuthenticationException;
+import com.aianik.anik.ai.openapi.security.OpenApiSessionUtils;
+import com.aianik.anik.ai.persistence.app.mapper.AppMapper;
+import com.aianik.anik.ai.persistence.app.po.AppPO;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;

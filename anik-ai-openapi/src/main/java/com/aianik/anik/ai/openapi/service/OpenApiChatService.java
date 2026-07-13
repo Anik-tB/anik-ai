@@ -1,14 +1,14 @@
-package com.aizuda.anik.ai.openapi.service;
+package com.aianik.anik.ai.openapi.service;
 
-import com.aizuda.anik.ai.admin.dto.AgentChatCommand;
-import com.aizuda.anik.ai.admin.service.agent.AgentChatService;
-import com.aizuda.anik.ai.common.execption.AnikAiException;
-import com.aizuda.anik.ai.common.openapi.dto.OpenApiChatRequest;
-import com.aizuda.anik.ai.common.openapi.dto.OpenApiChatSyncResponse;
-import com.aizuda.anik.ai.openapi.emitter.CollectingEmitter;
-import com.aizuda.anik.ai.openapi.emitter.SseWrappingEmitter;
-import com.aizuda.anik.ai.openapi.security.OpenApiSessionUtils;
-import com.aizuda.anik.ai.persistence.admin.po.UserPO;
+import com.aianik.anik.ai.admin.dto.AgentChatCommand;
+import com.aianik.anik.ai.admin.service.agent.AgentChatService;
+import com.aianik.anik.ai.common.execption.AnikAiException;
+import com.aianik.anik.ai.common.openapi.dto.OpenApiChatRequest;
+import com.aianik.anik.ai.common.openapi.dto.OpenApiChatSyncResponse;
+import com.aianik.anik.ai.openapi.emitter.CollectingEmitter;
+import com.aianik.anik.ai.openapi.emitter.SseWrappingEmitter;
+import com.aianik.anik.ai.openapi.security.OpenApiSessionUtils;
+import com.aianik.anik.ai.persistence.admin.po.UserPO;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
