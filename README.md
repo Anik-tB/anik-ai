@@ -79,7 +79,7 @@ anik-ai/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/aizuda/anik-ai.git
+git clone https://github.com/Anik-tB/anik-ai.git
 cd anik-ai
 ```
 
