@@ -159,7 +159,7 @@ eventSource.addEventListener('error', (e) => {
 ```
 anik-ai-agent-example/
 ├── src/main/java/
-│   └── com/aizuda/anik/ai/agent/example/
+│   └── com/aianik/anik/ai/agent/example/
 │ ├── AnikAiAgentExampleApplication.java # Startup class
 │       ├── config/
 │ │ └── SwaggerConfig.java # Swagger configuration

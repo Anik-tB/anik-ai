@@ -11,7 +11,7 @@
         <relativePath/>
     </parent>
 
-    <groupId>com.aizuda</groupId>
+    <groupId>com.aianik</groupId>
     <artifactId>anik-ai-agent-example</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
@@ -26,7 +26,7 @@
     <dependencies>
         <!-- Anik-AI Agent Starter -->
         <dependency>
-            <groupId>com.aizuda</groupId>
+            <groupId>com.aianik</groupId>
             <artifactId>anik-ai-agent-starter</artifactId>
             <version>${anik-ai.version}</version>
         </dependency>
@@ -40,7 +40,7 @@
 
         <!-- Anik-AI OpenAPI Client -->
         <dependency>
-            <groupId>com.aizuda</groupId>
+            <groupId>com.aianik</groupId>
             <artifactId>anik-ai-openapi-starter</artifactId>
             <version>${anik-ai.version}</version>
         </dependency>

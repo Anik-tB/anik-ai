@@ -1,4 +1,4 @@
-package com.aizuda.anik.ai.agent.example.config;
+package com.aianik.anik.ai.agent.example.config;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Contact;
@@ -25,7 +25,7 @@ public class SwaggerConfig {
                         .description("Demonstrate how to use Anik AI OpenAPI Client to call the server interface")
                         .contact(new Contact()
                                 .name("OpenAnik")
-                                .url("https://github.com/aizuda/anik-ai"))
+                                .url("https://github.com/aianik/anik-ai"))
                         .license(new License()
                                 .name("Apache 2.0")
                                 .url("https://www.apache.org/licenses/LICENSE-2.0.html")));

@@ -1,6 +1,6 @@
-package com.aizuda.anik.ai.agent.example;
+package com.aianik.anik.ai.agent.example;
 
-import com.aizuda.anik.ai.agent.starter.EnableAnikAiAgent;
+import com.aianik.anik.ai.agent.starter.EnableAnikAiAgent;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

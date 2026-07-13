@@ -20,7 +20,7 @@ logging:
     # This warning is normal in reactive streaming calls and does not affect functionality
     io.micrometer.observation.contextpropagation: ERROR
     # OpenAPI Client log
-    com.aizuda.anik.ai.openapi.client: DEBUG
+    com.aianik.anik.ai.openapi.client: DEBUG
 
 anik-ai:
     # enableclient mode

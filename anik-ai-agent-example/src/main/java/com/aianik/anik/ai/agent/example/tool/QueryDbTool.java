@@ -1,4 +1,4 @@
-package com.aizuda.anik.ai.agent.example.tool;
+package com.aianik.anik.ai.agent.example.tool;
 
 import org.springframework.ai.tool.annotation.Tool;
 import org.springframework.ai.tool.annotation.ToolParam;
