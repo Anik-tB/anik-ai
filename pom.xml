@@ -4,11 +4,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.aizuda</groupId>
+    <groupId>com.aianik</groupId>
     <version>${revision}</version>
     <name>anik-ai</name>
     <description>anik-ai</description>
-    <url>https://gitee.com/aizuda/anik-ai</url>
+    <url>https://gitee.com/aianik/anik-ai</url>
     <artifactId>anik-ai</artifactId>
     <packaging>pom</packaging>
 
@@ -74,122 +74,122 @@
             </dependency>
 
             <dependency>
-                <groupId>com.aizuda</groupId>
+                <groupId>com.aianik</groupId>
                 <artifactId>anik-ai-commons-core</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
-                <groupId>com.aizuda</groupId>
+                <groupId>com.aianik</groupId>
                 <artifactId>anik-ai-feature-common</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
-                <groupId>com.aizuda</groupId>
+                <groupId>com.aianik</groupId>
                 <artifactId>anik-ai-feature-model</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
-                <groupId>com.aizuda</groupId>
+                <groupId>com.aianik</groupId>
                 <artifactId>anik-ai-feature-agent</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
-                <groupId>com.aizuda</groupId>
+                <groupId>com.aianik</groupId>
                 <artifactId>anik-ai-commons-grpc</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
-                <groupId>com.aizuda</groupId>
+                <groupId>com.aianik</groupId>
                 <artifactId>anik-ai-agent-common</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
-                <groupId>com.aizuda</groupId>
+                <groupId>com.aianik</groupId>
                 <artifactId>anik-ai-agent-core</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
-                <groupId>com.aizuda</groupId>
+                <groupId>com.aianik</groupId>
                 <artifactId>anik-ai-agent-starter</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
-                <groupId>com.aizuda</groupId>
+                <groupId>com.aianik</groupId>
                 <artifactId>anik-ai-persistence</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
-                <groupId>com.aizuda</groupId>
+                <groupId>com.aianik</groupId>
                 <artifactId>anik-ai-biz-template</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
-                <groupId>com.aizuda</groupId>
+                <groupId>com.aianik</groupId>
                 <artifactId>anik-ai-vector-template</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
-                <groupId>com.aizuda</groupId>
+                <groupId>com.aianik</groupId>
                 <artifactId>anik-ai-vector-pg-storage</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
-                <groupId>com.aizuda</groupId>
+                <groupId>com.aianik</groupId>
                 <artifactId>anik-ai-vector-milvus-storage</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
-                <groupId>com.aizuda</groupId>
+                <groupId>com.aianik</groupId>
                 <artifactId>anik-ai-vector-es-storage</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
-                <groupId>com.aizuda</groupId>
+                <groupId>com.aianik</groupId>
                 <artifactId>anik-ai-search-template</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
-                <groupId>com.aizuda</groupId>
+                <groupId>com.aianik</groupId>
                 <artifactId>anik-ai-search-elasticsearch-storage</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
-                <groupId>com.aizuda</groupId>
+                <groupId>com.aianik</groupId>
                 <artifactId>anik-ai-feature-rag</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
-                <groupId>com.aizuda</groupId>
+                <groupId>com.aianik</groupId>
                 <artifactId>anik-ai-feature-skill</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
-                <groupId>com.aizuda</groupId>
+                <groupId>com.aianik</groupId>
                 <artifactId>anik-ai-feature-memory</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
-                <groupId>com.aizuda</groupId>
+                <groupId>com.aianik</groupId>
                 <artifactId>anik-ai-feature-resource</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
-                <groupId>com.aizuda</groupId>
+                <groupId>com.aianik</groupId>
                 <artifactId>anik-ai-admin</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
-                <groupId>com.aizuda</groupId>
+                <groupId>com.aianik</groupId>
                 <artifactId>anik-ai-openapi</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
-                <groupId>com.aizuda</groupId>
+                <groupId>com.aianik</groupId>
                 <artifactId>anik-ai-openapi-core</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
-                <groupId>com.aizuda</groupId>
+                <groupId>com.aianik</groupId>
                 <artifactId>anik-ai-openapi-starter</artifactId>
                 <version>${revision}</version>
             </dependency>
@@ -374,9 +374,9 @@
     </licenses>
 
     <scm>
-        <url>https://gitee.com/aizuda/anik-ai</url>
-        <connection>https://gitee.com/aizuda/anik-ai</connection>
-        <developerConnection>https://gitee.com/aizuda/</developerConnection>
+        <url>https://gitee.com/aianik/anik-ai</url>
+        <connection>https://gitee.com/aianik/anik-ai</connection>
+        <developerConnection>https://gitee.com/aianik/</developerConnection>
     </scm>
 
     <developers>
