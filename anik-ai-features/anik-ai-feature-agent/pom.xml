@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.aizuda</groupId>
+        <groupId>com.aianik</groupId>
         <artifactId>anik-ai-features</artifactId>
         <version>${revision}</version>
         <relativePath>../pom.xml</relativePath>
@@ -18,27 +18,27 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.aizuda</groupId>
+            <groupId>com.aianik</groupId>
             <artifactId>anik-ai-commons-core</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.aizuda</groupId>
+            <groupId>com.aianik</groupId>
             <artifactId>anik-ai-commons-grpc</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.aizuda</groupId>
+            <groupId>com.aianik</groupId>
             <artifactId>anik-ai-biz-template</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.aizuda</groupId>
+            <groupId>com.aianik</groupId>
             <artifactId>anik-ai-feature-model</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.aizuda</groupId>
+            <groupId>com.aianik</groupId>
             <artifactId>anik-ai-feature-memory</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.aizuda</groupId>
+            <groupId>com.aianik</groupId>
             <artifactId>anik-ai-feature-skill</artifactId>
         </dependency>
         <dependency>
