@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 option java_multiple_files = true;
-option java_package = "com.aizuda.anik.ai.common.grpc.auto";
+option java_package = "com.aianik.anik.ai.common.grpc.auto";
 
 // 统一请求信封
 message GrpcAnikAiRequest {

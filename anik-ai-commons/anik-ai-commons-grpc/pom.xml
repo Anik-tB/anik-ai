@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.aizuda</groupId>
+        <groupId>com.aianik</groupId>
         <artifactId>anik-ai-commons</artifactId>
         <version>${revision}</version>
         <relativePath>../pom.xml</relativePath>
@@ -40,7 +40,7 @@
             <version>${protobuf-java.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.aizuda</groupId>
+            <groupId>com.aianik</groupId>
             <artifactId>anik-ai-commons-core</artifactId>
         </dependency>
         <dependency>
