@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.aizuda.anik.ai.persistence.app.mapper.ClientNodeMapper">
+<mapper namespace="com.aianik.anik.ai.persistence.app.mapper.ClientNodeMapper">
 
     <insert id="insertBatch" parameterType="java.util.List" useGeneratedKeys="true" keyProperty="id">
         INSERT INTO anik_ai_client_node (app_id, host_id, host_ip, grpc_port,

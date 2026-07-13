@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.aizuda.anik.ai.persistence.agent.mapper.ObservationMapper">
+<mapper namespace="com.aianik.anik.ai.persistence.agent.mapper.ObservationMapper">
 
     <insert id="insertBatch" parameterType="java.util.List">
         INSERT INTO anik_ai_observation (id, trace_id, parent_observation_id, type, name,
