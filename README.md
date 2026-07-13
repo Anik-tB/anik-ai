@@ -1,25 +1,4 @@
-﻿<p align="center">
-  <img alt="Anik-AI Logo" src="docs/images/logo.png" width="180px"/>
-</p>
-
-<h1 align="center">Anik AI</h1>
-
-<p align="center">
-  <strong>A flexible, extensible, enterprise-grade AI Agent Platform</strong><br/>
-  Built on Spring Boot 4 + Spring AI &nbsp;·&nbsp; Multi-model &nbsp;·&nbsp; RAG &nbsp;·&nbsp; Memory &nbsp;·&nbsp; Skills &nbsp;·&nbsp; OpenAPI
-</p>
-
-<p align="center">
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache%202.0-blue.svg" alt="License"/></a>
-  <img src="https://img.shields.io/badge/Java-25-orange.svg" alt="Java 25"/>
-  <img src="https://img.shields.io/badge/Spring%20Boot-4.0-brightgreen.svg" alt="Spring Boot 4"/>
-  <img src="https://img.shields.io/badge/Spring%20AI-latest-6DB33F.svg" alt="Spring AI"/>
-  <img src="https://img.shields.io/badge/H2-embedded-blueviolet.svg" alt="H2 Database"/>
-</p>
-
----
-
-## 🧠 What is Anik AI?
+﻿## 🧠 What is Anik AI?
 
 **Anik AI** is a self-hosted, out-of-the-box enterprise AI agent platform. Connect multiple large language models (LLMs), build and orchestrate intelligent agents, manage knowledge bases with RAG (Retrieval-Augmented Generation), and expose everything through a clean admin UI and standardized OpenAPI — all from a single deployable JAR.
 
